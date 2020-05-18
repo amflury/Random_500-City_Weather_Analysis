@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--Attempt at ribbon-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">Latitude</a>
+      <button class="navbar-toggler" href="../index.html" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </ul>
+          <ul class="nav justify-content-end">
+            <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="visual1.html">vCloudiness</a>
+              <a class="dropdown-item" href="visual2.html">vHumidity</a>
+              <a class="dropdown-item" href="visual3.html">vTemperature</a>
+              <a class="dropdown-item" href="visual4.html">vWind Speed</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header-->
+
+    <div class="row">
+        <div class="col-md-12" align="center">
+          <h1>Comparison: Latitude vs X</h1>
+        </div>
+      </div>
+
+<!-- description-->
+
+      <div class="row">
+        <div class="col-md-4">
+          <h6> </h6>
+        </div>
+
+        <div class="col-md-4" align="center">
+          <h6>All included graphs for comparison:</h6>
+        </div>
+      </div>
+
+    <!--Graphs full screen at small and two accross at med or larger-->
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <img src="../Resources/LatvCloud.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="../Resources/LatvHumidity.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="../Resources/LatvMaxTemp.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="../Resources/LatvWind.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
+  
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!--Attempt at ribbon-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="../index.html">Latitude</a>
+      <button class="navbar-toggler" href="../index.html" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </ul>
+          <ul class="nav justify-content-end">
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="visual1.html">vCloudiness</a>
+              <a class="dropdown-item" href="visual2.html">vHumidity</a>
+              <a class="dropdown-item" href="visual3.html">vTemperature</a>
+              <a class="dropdown-item" href="visual4.html">vWind Speed</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header-->
+
+    <div class="row">
+        <div class="col-md-12" align="center">
+          <h1>Max Temperature</h1>
+        </div>
+      </div>
+
+<!-- description-->
+
+      <div class="row">
+        <div class="col-md-4">
+          <h6> </h6>
+        </div>
+
+
+      </div>
+
+    <!--Graphs full screen at small and two accross at med or larger-->
+    <div class="row">
+      <div class="col-md-12">
+        <img class="graph" id="img1" src="../Resources/LatvMaxTemp.png">
+      </div>
+    </div>
+    <!-- .graph {
+      height: 100vh;
+      width: 100vh;
+      object-fit: cover;
+      }-->
+
+
+      <div class="row">
+        <div class="col-md-2" align="center"></div>
+        <div class="col-md-8" align="center">
+          <p>
+            Comparing city Latitude to Temperature: As expected, the termperatures rise as the Latitude gets closer to the equator.
+            It did come as a surprise that the temperatures were actually centered around a Latitude of 10 rather than 0.
+          </p>
+        </div>
+        <div class="col-md-2" align="center"></div>
+      </div>
+
+
+</body>
+
+</html>

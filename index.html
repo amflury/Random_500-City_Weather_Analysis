@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<style type="text/css">
+   body { background:lightgray !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <!--Attempt at ribbon-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+      <button class="navbar-toggler" href="index.html" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+          </ul>
+          <ul class="nav justify-content-end">
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="htmls/data.html">Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="htmls/comparisons.html">Comparison</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="htmls/visual1.html">vCloudiness</a>
+              <a class="dropdown-item" href="htmls/visual2.html">vHumidity</a>
+              <a class="dropdown-item" href="htmls/visual3.html">vTemperature</a>
+              <a class="dropdown-item" href="htmls/visual4.html">vWind Speed</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+<!--Jumbotro try-->
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Summary: Latitude vs. X</h1>
+    <p class="lead">The purpose of this project is to create a visualization dashboard website using visualizations we've learned in a past assignment. 
+      The information being shown is data pulled from the OpenWeatherMap API to assemble a dataset over 500 cities.
+    </p>
+  </div>
+</div>
+
+    <!--Normally these medium columns go full wide on small screen sizes-->
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <img src="Resources/LatvCloud.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="Resources/LatvHumidity.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="Resources/LatvMaxTemp.png" class="img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <img src="Resources/LatvWind.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+
+
+</body>
+
+</html>
